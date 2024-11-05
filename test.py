@@ -3,6 +3,7 @@ from web3 import Web3
 with open ("test_abi.json") as file:
     test_abi = json.load(file)
 w3 = Web3(Web3.HTTPProvider("arb1.arbitrum.io/rpc"))
+#uniswap arbのコントラクトです
 contract = w3.eth.contract(address="0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45", abi=test_abi)
 
 # トークンアドレス定義
